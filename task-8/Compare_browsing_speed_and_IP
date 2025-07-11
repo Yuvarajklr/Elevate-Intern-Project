@@ -1,0 +1,54 @@
+# 📶 VPN Speed Test Comparison
+
+This document compares the internet speed results with and without a VPN enabled.
+
+---
+
+## 🖼️ Without VPN
+
+![Without VPN Speedtest](https://github.com/Yuvarajklr/task-8/blob/2bc7f28e43cbdf52cc2e35d4351bbaba81581aad/Screenshot_2025-07-05_15_31_49.png)
+
+- **Download Speed**: 37.92 Mbps  
+- **Upload Speed**: 35.70 Mbps  
+- **Ping**: 267 ms  
+- **Jitter**: 420 ms  
+- **ISP**: BSNL  
+- **Server Location**: Pearland, TX  
+- **IP Address**: 120.60.11.63  
+
+---
+
+## 🔐 With VPN (ProtonVPN)
+
+![With VPN Speedtest](https://github.com/Yuvarajklr/task-8/blob/59fd6855d998ef77dc28d9e15633336b3b88426b/Screenshot_2025-07-05_15_26_00.png)
+
+- **Download Speed**: 36.30 Mbps  
+- **Upload Speed**: 37.25 Mbps  
+- **Ping**: 274 ms  
+- **Jitter**: 545 ms  
+- **VPN Provider**: ProtonVPN  
+- **Server Location**: Houston, TX  
+- **IP Address**: 37.19.221.243  
+
+---
+
+## 📊 Summary Table
+
+| Metric            | Without VPN       | With VPN (ProtonVPN) |
+|-------------------|-------------------|------------------------|
+| Download Speed    | 37.92 Mbps        | 36.30 Mbps             |
+| Upload Speed      | 35.70 Mbps        | 37.25 Mbps             |
+| Ping              | 267 ms            | 274 ms                 |
+| Jitter            | 420 ms            | 545 ms                 |
+| ISP               | BSNL              | ProtonVPN              |
+| Server Location   | Pearland, TX      | Houston, TX            |
+| IP Address        | 120.60.11.63      | 37.19.221.243          |
+
+---
+
+## 💡 Observations
+
+- **VPN slightly reduced download speed**, which is common due to encryption overhead.
+- **Upload speed increased**, possibly due to better routing or VPN server optimization.
+- **Latency and jitter increased**, indicating more variation in packet delivery — again, expected with VPNs.
+- **IP address and location changed**, confirming VPN functionality.

@@ -1,0 +1,97 @@
+# 🔎 Firefox Extension Security Analysis Report
+
+
+---
+
+## ✅ Safe Extensions
+
+### 1. **uBlock Origin** (Safe)
+- **Description**: Efficient ad blocker using filter lists to block ads, trackers, and malware.
+- **Permissions**: Access data for all websites.
+- **Security Concerns**: Minimal – used only for blocking unwanted content.
+
+---
+
+### 2. **Bitwarden** (Safe)
+- **Description**: Secure, open-source password manager for storing and autofilling credentials.
+- **Permissions**: Access browser tabs and input fields.
+- **Security Concerns**: Minimal – encrypts data before storing.
+
+---
+
+### 3. **NoScript Security Suite** (Safe)
+- **Description**: Blocks JavaScript and other active content to protect from malicious scripts.
+- **Permissions**: Control script execution on websites.
+- **Security Concerns**: May break some site functionality if not configured.
+
+---
+
+### 4. **Privacy Badger** (Safe)
+- **Description**: Automatically blocks third-party trackers based on behavior.
+- **Permissions**: Read and change data on all websites.
+- **Security Concerns**: Minimal – created by EFF with privacy focus.
+
+---
+
+### 5. **Grammarly** (Safe)
+- **Description**: Grammar and writing assistant that corrects input text.
+- **Permissions**: Read text input fields.
+- **Security Concerns**: Processes text input; transparent about data policies.
+
+---
+
+### 6. **Dark Reader** (Safe)
+- **Description**: Enables dark mode on all websites for night-time readability.
+- **Permissions**: Modify appearance of web content.
+- **Security Concerns**: Open-source with no known privacy issues.
+
+---
+
+## ⚠️ Suspicious Extensions
+
+### 7. **Video Downloader Pro** (Suspicious)
+- **Description**: Download streaming videos; removed for data tracking without consent.
+- **Permissions**: Full access to browsing activity and downloaded files.
+- **Security Concerns**: Tracked users and shared data secretly.
+
+---
+
+### 8. **SafeBrowse** (Suspicious)
+- **Description**: Claimed to enhance browsing; injected ads and ran background scripts.
+- **Permissions**: Modify data on websites, read browsing history.
+- **Security Concerns**: Degraded performance and privacy.
+
+---
+
+### 9. **Search Manager** (Suspicious)
+- **Description**: Browser hijacker that modifies homepage and search engine.
+- **Permissions**: Modify browser settings.
+- **Security Concerns**: Hijacks user behavior, collects personal data.
+
+---
+
+### 10. **SaveFrom Helper ** (Suspicious)
+- **Description**: Converts documents but often bundled with adware.
+- **Permissions**: Access to browsing data and downloads.
+- **Security Concerns**: Redirects traffic, collects user data.
+
+---
+
+## 🧠 Summary
+
+| Extension Name           | Type       | Concern Level         |
+|--------------------------|------------|------------------------|
+| uBlock Origin            | Safe       | Minimal                |
+| Bitwarden                | Safe       | Minimal                |
+| NoScript Security Suite  | Safe       | May break some sites   |
+| Privacy Badger           | Safe       | Minimal                |
+| Grammarly                | Safe       | Text processing        |
+| Dark Reader              | Safe       | Minimal                |
+| Video Downloader Pro     | Suspicious | Data tracking          |
+| SafeBrowse               | Suspicious | Injects ads, tracking  |
+| Search Manager           | Suspicious | Browser hijacking      |
+| SaveFrom Helper          | Suspicious | Redirects, adware      |
+
+---
+
+

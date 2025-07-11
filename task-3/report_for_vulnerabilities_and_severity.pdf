@@ -1,0 +1,117 @@
+
+
+VULNERABILITY ASSESSMENT REPORT
+
+Date of Report: June 26, 2025
+Assessed System/IP: localhost (127.0.0.1) and 192.168.1.47
+Assessment Tool: Tenable Nessus (inferred from plugin IDs and format)
+
+1. EXECUTIVE SUMMARY
+
+This report summarizes the findings of a vulnerability assessment conducted on the specified target(s). Several vulnerabilities were identified, with a focus on Node.js-related issues and a denial-of-service vulnerability in Python Tornado, all categorized as High severity. A Medium severity issue with the SSL certificate was also found. Addressing these vulnerabilities is crucial to mitigate potential risks such as remote code execution, denial of service, and information disclosure.
+
+2. FINDINGS BY SEVERITY
+
+This section details the identified vulnerabilities, categorized by their severity level.
+
+2.1. High Severity Vulnerabilities
+
+2.1.1. Node.js 18.x < 18.20.1 / 20.x < 20.12.1 / 21.x < 21.7.2 Multiple Vulnerabilities (Wednesday, April 3, 2024 Security Releases)
+
+    Plugin ID: 152945
+
+    Vulnerability Name: Node.js 18.x < 18.20.1 / 20.x < 20.12.1 / 21.x < 21.7.2 Multiple Vulnerabilities
+
+    Description: The version of Node.js installed on the remote host is prior to 18.20.1, 20.12.1, or 21.7.2. It is, therefore, affected by multiple vulnerabilities as referenced in the April 3, 2024 Security Releases. These include issues related to HTTP/2 frames, buffer overflows, and HTTP/1 parsing. Successful exploitation could lead to various impacts, including remote code execution or denial of service.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade Node.js to version 18.20.1 or later, 20.12.1 or later, or 21.7.2 or later, as appropriate.
+
+2.1.2. Node.js 18.x < 18.20.x < 20.12.x < 22.1x < 23.1x < 23.6.1 Multiple Vulnerabilities (Tuesday, January 23, 2025 Security Releases)
+
+    Plugin ID: 174404
+
+    Vulnerability Name: Node.js 18.x < 18.20.x < 20.12.x < 22.1x < 23.1x < 23.6.1 Multiple Vulnerabilities
+
+    Description: The version of Node.js installed on the remote host is prior to 18.20.x, 20.12.x, 22.1x, 23.1x, or 23.6.1. It is, therefore, affected by multiple vulnerabilities as referenced in the January 23, 2025 Security Releases. These vulnerabilities could lead to security compromises.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade Node.js to version 18.20.x or later, 20.12.x or later, 22.1x or later, 23.1x or later, or 23.6.1 or later, as appropriate.
+
+2.1.3. Node.js 20.x < 20.12.2 / 22.x < 22.1.1 / 23.x < 24.0.2 Multiple Vulnerabilities (Wednesday, May 14, 2025 Security Releases)
+
+    Plugin ID: 182366
+
+    Vulnerability Name: Node.js 20.x < 20.12.2 / 22.x < 22.1.1 / 23.x < 24.0.2 Multiple Vulnerabilities
+
+    Description: The version of Node.js installed on the remote host is prior to 20.12.2, 22.1.1, or 24.0.2. It is, therefore, affected by multiple vulnerabilities as referenced in the May 14, 2025 Security Releases. This includes issues like HTTP/1 parsing and memory corruption.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade Node.js to version 20.12.2 or later, 22.1.1 or later, or 24.0.2 or later, as appropriate.
+
+2.1.4. Node.js 18.x < 18.20.x < 20.12.x < 22.x < 22.4.1 Multiple Vulnerabilities (Monday, July 8, 2024 Security Releases)
+
+    Plugin ID: 181530
+
+    Vulnerability Name: Node.js 18.x < 18.20.x < 20.12.x < 22.x < 22.4.1 Multiple Vulnerabilities
+
+    Description: The version of Node.js installed on the remote host is prior to 18.20.x, 20.12.x, 22.x, or 22.4.1. It is, therefore, affected by multiple vulnerabilities as referenced in the July 8, 2024 Security Releases.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade Node.js to version 18.20.x or later, 20.12.x or later, 22.x or later, or 22.4.1 or later, as appropriate.
+
+2.1.5. Node.js 18.x < 18.20.1 / 20.x < 21.x < 21.6.2 Multiple Vulnerabilities (Wednesday, February 14, 2024 Security Release)
+
+    Plugin ID: 175655
+
+    Vulnerability Name: Node.js 18.x < 18.20.1 / 20.x < 21.x < 21.6.2 Multiple Vulnerabilities
+
+    Description: The version of Node.js installed on the remote host is prior to 18.20.1, 20.x, or 21.6.2. It is, therefore, affected by multiple vulnerabilities as referenced in the February 14, 2024 Security Release.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade Node.js to version 18.20.1 or later, 20.x or later, or 21.6.2 or later, as appropriate.
+
+2.1.6. Python Tornado 6.5.0 DoS
+
+    Plugin ID: 237199
+
+    Vulnerability Name: Python Tornado 6.5.0 DoS
+
+    Description: The detected version of the Tornado Python package is prior to 6.4.2. It is affected by a vulnerability where input data can cause errors, leading to a denial of service (DoS).
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Upgrade to Tornado version 6.5.0 or later.
+
+2.2. Medium Severity Vulnerabilities
+
+2.2.1. SSL Certificate Cannot Be Trusted
+
+    Plugin ID: 51192
+
+    Vulnerability Name: SSL Certificate Cannot Be Trusted
+
+    Description: The SSL certificate for this service cannot be trusted. This can be due to various reasons, including an incomplete certificate chain, an expired or revoked certificate, or a certificate signed by an unknown certificate authority. An untrusted certificate can compromise the authenticity of the server and lead to security warnings for users.
+
+    Affected Host(s): localhost (127.0.0.1), 192.168.1.47
+
+    Solution: Purchase or generate a proper SSL certificate for this service from a trusted Certificate Authority (CA) and ensure the entire certificate chain is correctly installed.
+
+3. RECOMMENDATIONS
+
+To enhance the security posture of the assessed systems, the following recommendations are provided:
+
+    Immediate Node.js Patching: Prioritize the upgrade of Node.js to the latest stable and secure versions as specified for each identified vulnerability (e.g., 18.20.1+, 20.12.1+, 21.7.2+, 22.1.1+, 23.6.1+, 24.0.2+, etc.). This is critical due to the high severity and potential for remote code execution and denial of service.
+
+    Upgrade Python Tornado: Update the Python Tornado package to version 6.5.0 or newer to resolve the identified denial-of-service vulnerability.
+
+    SSL Certificate Remediation: Obtain and install a valid SSL certificate issued by a reputable Certificate Authority (CA). Ensure that the complete certificate chain is correctly configured on the server to establish trust and avoid warnings for users.
+
+    Regular Vulnerability Scanning: Implement a schedule for regular vulnerability assessments to proactively identify and address new security vulnerabilities as they emerge.
+
+    Software Lifecycle Management: Establish a robust process for keeping all installed software, libraries, and frameworks up-to-date with the latest security patches.

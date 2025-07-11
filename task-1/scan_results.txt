@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Mon Jun 23 20:13:45 2025 as: /usr/lib/nmap/nmap --privileged -sV -sS -oN scan_results.txt 192.168.1.7
+Nmap scan report for 192.168.1.7
+Host is up (0.0079s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+9200/tcp open  wap-wsp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9200-TCP:V=7.95%I=7%D=6/23%Time=68596844%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,2,"\r\n");
+MAC Address: FA:95:AD:13:F9:8D (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 23 20:15:59 2025 -- 1 IP address (1 host up) scanned in 133.54 seconds
